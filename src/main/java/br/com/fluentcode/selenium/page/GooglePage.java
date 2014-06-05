@@ -14,11 +14,11 @@ public class GooglePage {
 	
 	public void search(String text){
 		// Enter the string
-		WebElement campoDeTexto = driver.findElement(By.name("q"));
-		campoDeTexto.sendKeys(text);
+		WebElement textField = driver.findElement(By.name("q"));
+		textField.sendKeys(text);
 
 		// Submit the form
-		campoDeTexto.submit();
+		textField.submit();
 	}
 	
 
