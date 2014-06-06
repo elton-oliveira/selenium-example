@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+// The Page Object pattern
 public class GooglePage {
 	
 	private WebDriver driver;
