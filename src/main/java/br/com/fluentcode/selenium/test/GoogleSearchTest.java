@@ -19,16 +19,16 @@ public class GoogleSearchTest {
 		// Go to the Google home page
 		driver.get("http://www.google.com.br/");
 	}
+	
+	@After
+	public void end() {
+		driver.quit();
+	}
 
 	@Test
 	public void shouldSearchSelenium() {
 		GooglePage googlePage = new GooglePage(driver);
 		googlePage.search("Selenium");
-	}
-
-	@After
-	public void end() {
-		driver.quit();
 	}
 
 }
