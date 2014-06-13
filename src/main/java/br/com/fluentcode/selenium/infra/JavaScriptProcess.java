@@ -12,7 +12,7 @@ public class JavaScriptProcess {
 	private WebDriverWait wait;
 
 	public JavaScriptProcess(WebDriver driver) {
-		wait = new WebDriverWait(driver, 4 * 60);
+		wait = new WebDriverWait(driver, 10);
 	}
 
 	public void waitJQueryCompleted() {
