@@ -20,7 +20,7 @@ public class FipeSystemTest {
 
 	@Before
 	public void begin() {
-		this.driver = WebDriverFactory.getInternetExplorerDriver();
+		this.driver = WebDriverFactory.getHtmlUnitDriver();
 		this.fipeHomePage = new FipeHomePage(driver);
 		fipeHomePage.visit();
 	}
@@ -40,5 +40,5 @@ public class FipeSystemTest {
 		querySmallCarsAndUtilities.query(form);
 		assertThat(driver.getPageSource(), containsString("R$ 51.954,00") );
 	}
-
+	
 }
